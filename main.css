@@ -1,0 +1,19 @@
+body {
+font-family:Arial, Helvetica, sans-serif;
+font-size: 13px;
+}
+.hidden {display:none;}
+.sectionTitle {font-weight:bold;}
+.title {font-size: 18px;}
+.topLayer {color:#F9A753;}
+.medLayer {color:#B67071;}
+.lastLayer{color:#696CB2;}
+.veinInfo {
+	width:150px;
+	float: left;
+	margin-top:50px;
+	}
+#veinImage {
+	width: 400px;
+	float:left;
+	} 

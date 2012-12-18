@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="media/main.css" type="text/css" rel="stylesheet" />
+<script src="media/jquery-1.8.min.js" type="text/javascript" language="javascript"></script>
+<script language="javascript">
+$(function(){
+var $sel = {
+vein : $('.vein'),
+veinInfo : $('.veinInfo')	
+}
+$sel.vein.click(function(){
+	$sel.veinInfo.hide();
+	$("#" + $(this).attr('number')).show();
+	});
+});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="veinImage">
+<img src="media/periphial-vein.PNG" alt="Vein Anatomy" usemap="#Map" border="0" />
+<map name="Map" id="Map">
+  <area shape="poly" coords="149,48,229,161,246,40,190,3" class="vein" number="1" />
+  <area shape="poly" coords="265,181,230,126,239,60,317,102" class="vein" number="2" />
+  <area shape="poly" coords="329,243,273,164,311,117,392,196" class="vein" number="3" />
+</map>
+</div>
+
+<div id="1" class="hidden veinInfo ">
+<div class="title topLayer">Tunica <span class="sectionTitle">adventita:</span></div>
+The outermost layer, the tunica adventita is primarily made up of loose connective tissue with a network of callagen and elastic fibers. These structures provide a protective mechanism to allow the vein to roll away from external trauma.
+</div>
+<div id="2" class="hidden veinInfo">
+<div class="title medLayer">Tunica <span class="sectionTitle">media:</span></div>
+The thick, middle layer of the vein made up of smooth and elastic muscle fibers which allow the vein to stretch or constrict in response to changes in blood volume, pressure or temperature.
+</div>
+<div id="3" class="hidden veinInfo">
+<div class="title lastLayer">Tunica <span class="sectionTitle">intima:</span> </div>
+The innermost layer, the tunica intima is a single layer of tightly configured endothelial cells which prevents fluid from escaping from the vein into the tissues.
+</div>
+
+</div>
+</body>
+</html>
